@@ -1,0 +1,106 @@
+{% extends 'base.html.twig' %} {% block title %}Hello HomeController!{% endblock
+%} {% block body %}
+<div class="container">
+    <div class="jumbotron mt-5">
+        <h1 class="display-3 mt-5 pt-3">Bienvenue sur LittleBNB</h1>
+        <p class="lead">
+        Nous mettons en relation les voyageurs et les propriétaires qui veulent
+        profiter d'opportunité et gagner de l'argent en proposant leur bien à la
+        location
+        </p>
+        <hr class="my-4" />
+        <p>
+        Vous êtes voyageur? Et vous souhaitez voir où vous pourrez loger pour
+        votres prochain déplacement?
+        </p>
+        <p class="lead">
+        <a href="#" class="btn btn-primary btn-lg" role="button"
+            >Voir les annonces</a
+        >
+        </p>
+    </div>
+    <h2>Nos appartements stars</h2>
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-header bg-light text-center">
+                    3 chambres, <strong>49&euros; / nuit</strong><br>
+                </div>
+                <img src="{{ asset('asset/img/appartement/app1.jpg')}}" alt="appartement 1" 
+                style="height: 200px; width: 100%; display: block;">
+                <div class="card-body">
+                    <h4 class="card-title">Appartement de grand standing</h4>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, omnis!</p>
+                    <a href="#" class="btn btn-secondary">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-header bg-light text-center">
+                    3 chambres, <strong>49&euros; / nuit</strong><br>
+                </div>
+                <img src="{{ asset('asset/img/appartement/app2.jpg')}}" alt="appartement 1" 
+                style="height: 200px; width: 100%; display: block;">
+                <div class="card-body">
+                    <h4 class="card-title">Appartement de grand standing</h4>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, omnis!</p>
+                    <a href="#" class="btn btn-secondary">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-header bg-light text-center">
+                    3 chambres, <strong>49&euros; / nuit</strong><br>
+                </div>
+                <img src="{{ asset('asset/img/appartement/app3.jpg')}}" alt="appartement 1" 
+                style="height: 200px; width: 100%; display: block;">
+                <div class="card-body">
+                    <h4 class="card-title">Appartement de grand standing</h4>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, omnis!</p>
+                    <a href="#" class="btn btn-secondary">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <h2>Nos propriétaires stars</h2>
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card border-secondary mb-3">
+                <div class="card-body">
+                    <h4 class="card-title">Tom Cruise</h4>
+                    <img src="{{ asset('asset/img/proprietaire/pp1.jpg')}}" alt="propriétaire 1" 
+                    style="height: 150px; width: 150px; display: block;">
+                    <p class="card-text">Lorem ipsum dolor, sit amet!</p>
+                    <a href="#" class="btn btn-success">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-secondary mb-3">
+                <div class="card-body">
+                    <h4 class="card-title">Evan Rachel Wood</h4>
+                    <img src="{{ asset('asset/img/proprietaire/pp2.jpg')}}" alt="propriétaire 2" 
+                    style="height: 150px; width: 100px; display: block;">
+                    <p class="card-text">Lorem ipsum dolor, sit amet!</p>
+                    <a href="#" class="btn btn-success">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-secondary mb-3">
+                <div class="card-body">
+                    <h4 class="card-title">Scarlett Johansson</h4>
+                    <img src="{{ asset('asset/img/proprietaire/pp3.jpg')}}" alt="propriétaire 3" 
+                    style="height: 150px; width: 200px; display: block;">
+                    <p class="card-text">Lorem ipsum dolor, sit amet!</p>
+                    <a href="#" class="btn btn-success">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
